@@ -31,14 +31,14 @@ const Dropdown: React.FC = () => {
 
 	return (
 		<motion.div
-			className="bg-slate-200 text-black flex flex-col justify-center"
+			className="bg-slate-100 text-black flex flex-col justify-center"
 			animate={isOpen ? "open" : "closed"}
 			variants={variants}
 			transition={{ duration: 1 }}
 		>
 			{navItems.map((item) => (
 				<Link href={item.path} key={item.id}>
-					<div className="w-full text-center hover:bg-slate-400 hover:font-bold duration-200">
+					<div className="w-full text-center hover:bg-slate-300 hover:font-bold duration-200">
 						<p className="mb-2 font-semibold">{item.label}</p>
 					</div>
 				</Link>
