@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/navigation/Footer";
 import Dropdown from "@/components/dropdown/Dropdown";
+import ConnectMe from "@/components/connectMe/ConnectMe";
 import StoreProvider from "./StoreProvider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,7 +22,8 @@ export default function RootLayout({
 	return (
 		<StoreProvider>
 			<html lang="en">
-				<body className={`flex flex-col min-h-screen min-w-screen ${inter.className}`}>
+				<body className={`relative flex flex-col min-h-screen min-w-screen ${inter.className}`}>
+					<ConnectMe />
 					<Navbar />
 					<Dropdown />
 					{children}
