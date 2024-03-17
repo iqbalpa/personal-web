@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
 	const isOpen = useAppSelector((state) => state.hamburger.isOpen);
 
 	return (
-		<div className="flex flex-row justify-between p-6 bg-slate-100 text-black">
+		<div className="flex flex-row justify-between p-6 bg-white text-black">
 			<motion.h1
 				className="font-bold text-2xl"
 				initial={{ opacity: 0 }}

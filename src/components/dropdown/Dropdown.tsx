@@ -31,7 +31,7 @@ const Dropdown: React.FC = () => {
 
 	return (
 		<motion.div
-			className="bg-slate-100 text-black flex flex-col justify-center"
+			className="bg-white text-black flex flex-col justify-center"
 			animate={isOpen ? "open" : "closed"}
 			variants={variants}
 			transition={{ duration: 1 }}
