@@ -3,6 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Hamburger from "../hamburger/Hamburger";
+import { useAppSelector } from "@/app/lib/hooks";
 
 type NavItem = {
 	id: number;
@@ -19,6 +21,8 @@ const navItems: NavItem[] = [
 ];
 
 const Navbar: React.FC = () => {
+	const isOpen = useAppSelector((state) => state.hamburger.isOpen);
+
 	return (
 		<div className="flex flex-row justify-between p-6 bg-slate-200 text-black">
 			<motion.h1
@@ -27,10 +31,11 @@ const Navbar: React.FC = () => {
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				IQBAL
+				IQBALPA
 			</motion.h1>
+			<Hamburger />
 			<motion.div
-				className="flex flex-row items-center justify-center"
+				className="hidden lg:flex lg:flex-row items-center justify-center"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.5 }}

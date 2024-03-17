@@ -21,7 +21,7 @@ const profileLinks: profileLink[] = [
 
 const Page: NextPage = () => {
 	return (
-		<div className="bg-white text-black flex flex-row items-center px-44 py-16 flex-1">
+		<div className="bg-white text-black flex flex-col items-center md:flex-row md:px-44 py-16 flex-1">
 			<motion.div
 				className="w-2/3 text-justify text-lg"
 				initial={{ opacity: 0 }}
@@ -46,7 +46,7 @@ const Page: NextPage = () => {
 				</p>
 			</motion.div>
 			<motion.div
-				className="w-1/3 mx-10 flex items-center justify-center"
+				className="w-1/3 mx-10 flex items-center justify-center invisible md:visible"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 1 }}
