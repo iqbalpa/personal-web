@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import IqbalV2 from "../../../public/assets/iqbal-v2.jpg";
+import IqbalV2 from "../../../../public/assets/iqbal-v2.jpg";
 
 const Hero: React.FC = () => {
 	return (

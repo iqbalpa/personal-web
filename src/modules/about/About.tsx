@@ -1,10 +1,10 @@
 import React from "react";
-import Education from "./Education";
-import Skill from "./Skill";
-import Experience from "./Experience";
-import Award from "./Award";
-import Organization from "./Organization";
-import Hero from "./Hero";
+import Education from "./section/Education";
+import Skill from "./section/Skill";
+import Experience from "./section/Experience";
+import Award from "./section/Award";
+import Organization from "./section/Organization";
+import Hero from "./section/Hero";
 
 const AboutModule: React.FC = () => {
 	return (

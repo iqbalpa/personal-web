@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import LogoUI from "../../../public/assets/ui.webp";
+import LogoUI from "../../../../public/assets/ui.webp";
 
 const Education: React.FC = () => {
 	return (
