@@ -1,10 +1,13 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import LogoUI from "../../../../public/assets/ui.webp";
 
 const Education: React.FC = () => {
 	return (
-		<div>
+		<motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
 			<h1 className="text-2xl font-bold">Education</h1>
 			<div className="flex flex-row items-center">
 				<Image src={LogoUI} alt="UI Logo" width={100} className="rounded-full" />
@@ -20,7 +23,7 @@ const Education: React.FC = () => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

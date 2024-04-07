@@ -1,9 +1,16 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import { OrganizationItemProps } from "@/constant/type";
 
 const OrganizationItem: React.FC<OrganizationItemProps> = ({ name, role, desc, duration }) => {
 	return (
-		<div>
+		<motion.div
+			initial={{ opacity: 0, scale: 0 }}
+			whileInView={{ opacity: 1, scale: 1 }}
+			transition={{ duration: 1 }}
+		>
 			<h1 className="text-lg font-semibold">{name}</h1>
 			<h2 className="text-md font-semibold">{role}</h2>
 			<p>{duration}</p>
@@ -14,7 +21,7 @@ const OrganizationItem: React.FC<OrganizationItemProps> = ({ name, role, desc, d
 					</li>
 				))}
 			</ul>
-		</div>
+		</motion.div>
 	);
 };
 

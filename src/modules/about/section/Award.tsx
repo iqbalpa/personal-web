@@ -1,11 +1,21 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import AwardItem from "@/components/awardItem/AwardItem";
 import { AwardItems } from "../../../constant/constant";
 
 const Award: React.FC = () => {
 	return (
 		<div>
-			<h1 className="text-2xl font-bold">Honor and Awards</h1>
+			<motion.h1
+				className="text-2xl font-bold"
+				initial={{ opacity: 0 }}
+				whileInView={{ opacity: 1 }}
+				transition={{ duration: 1 }}
+			>
+				Honor and Awards
+			</motion.h1>
 			{AwardItems.map((item, index) => (
 				<AwardItem key={index} {...item} />
 			))}
