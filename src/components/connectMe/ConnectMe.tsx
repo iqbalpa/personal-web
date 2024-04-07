@@ -27,7 +27,7 @@ const connectMeItems: ConnectMeItem[] = [
 const ConnectMe: React.FC = () => {
 	return (
 		<motion.div
-			className="hidden absolute top-1/3 -left-[6.8rem] hover:left-0 duration-300 lg:flex lg:flex-col text-white text-3xl bg-slate-500 p-4 rounded-r-2xl"
+			className="hidden fixed top-1/3 -left-[6.8rem] hover:left-0 duration-300 lg:flex lg:flex-col text-white text-3xl bg-slate-500 p-4 rounded-r-2xl"
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.5 }}
