@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import clsx from "clsx";
 import { ProjectItemProps } from "@/constant/type";
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
@@ -34,7 +35,15 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 				))}
 			</div>
 			<div className="flex justify-between">
-				<p className="text-gray-500 mt-2">{category}</p>
+				<p
+					className={clsx("mt-2", {
+						"text-blue-500": category === "Web Development",
+						"text-red-500": category === "Machine Learning",
+						"text-gray-500": category !== "Web Development" && category !== "Machine Learning",
+					})}
+				>
+					{category}
+				</p>
 				<div className="flex flex-row">
 					{appLink && (
 						<Link href={appLink} target="_blank">

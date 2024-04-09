@@ -123,4 +123,37 @@ export const projectItems: ProjectItemProps[] = [
 		],
 		appLink: "https://netflix-clone-iqbalpa.vercel.app/",
 	},
+	{
+		title: "Unsupervised Text Classification",
+		description: "Unsupervised text classification using Lbl2Vec",
+		techStacks: ["Python", "Lbl2Vec"],
+		category: "Machine Learning",
+		implementation: [
+			"Reproduced a paper about unsupervised text classification",
+			"Leveraged Lbl2Vec model to classify the unlabeled text to certain topics",
+		],
+		paperLink: "xxx",
+	},
+	{
+		title: "Fire Image Detection",
+		description: "Fire image detection using CNN",
+		techStacks: ["Python", "Tensorflow", "Keras"],
+		category: "Machine Learning",
+		implementation: [
+			"Created a deep learning model to predict fire image",
+			"Replicated the ResNet architecture to extract the image features",
+		],
+		paperLink: "xxx",
+	},
+	{
+		title: "Bleached Coral Detection",
+		description: "Bleached coral detection using CNN",
+		techStacks: ["Python", "Tensorflow", "Keras"],
+		category: "Machine Learning",
+		implementation: [
+			"Developed a deep learning model to detech bleached coral by using CNN",
+			"Used Grad-CAM to enhance the model reliability",
+		],
+		paperLink: "xxx",
+	},
 ];
