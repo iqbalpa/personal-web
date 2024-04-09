@@ -77,6 +77,7 @@ type ProjectItemProps = {
 	implementation: string[];
 	repoLink?: string;
 	appLink?: string;
+	paperLink?: string;
 };
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
@@ -88,6 +89,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 	implementation,
 	repoLink,
 	appLink,
+	paperLink,
 }) => {
 	return (
 		<div className="bg-white p-4 shadow-lg rounded-lg">
@@ -112,16 +114,23 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 				<p className="text-gray-500 mt-2">{category}</p>
 				<div className="flex flex-row">
 					{appLink && (
-						<Link href={appLink} target="_blank" rel="noreferrer">
+						<Link href={appLink} target="_blank">
 							<button className="text-blue-500 bg-transparent border border-blue-500 rounded-md px-3 py-1 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">
 								App
 							</button>
 						</Link>
 					)}
 					{repoLink && (
-						<Link href={repoLink} target="_blank" rel="noreferrer">
+						<Link href={repoLink} target="_blank">
 							<button className="ml-2 text-blue-500 bg-transparent border border-blue-500 rounded-md px-3 py-1 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">
 								Repo
+							</button>
+						</Link>
+					)}
+					{paperLink && (
+						<Link href={paperLink} target="_blank">
+							<button className="ml-2 text-blue-500 bg-transparent border border-blue-500 rounded-md px-3 py-1 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">
+								Paper
 							</button>
 						</Link>
 					)}
