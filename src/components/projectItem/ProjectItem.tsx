@@ -16,7 +16,15 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 	paperLink,
 }) => {
 	return (
-		<div className="bg-white p-4 shadow-lg rounded-lg">
+		// <div className="bg-white p-4 shadow-lg rounded-lg">
+		<div
+			className={clsx("p-4 shadow-lg rounded-lg", {
+				"bg-blue-200": category === "Web Development",
+				"bg-red-200": category === "Machine Learning",
+				"bg-green-200": category === "Data Analysis",
+				"bg-gray-300": category !== "Web Development" && category !== "Machine Learning",
+			})}
+		>
 			{image && <Image src={image} alt={title} width={300} height={200} />}
 			<h2 className="text-lg font-bold">{title}</h2>
 			<p className="text-gray-500">{description}</p>
@@ -36,10 +44,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 			</div>
 			<div className="flex justify-between">
 				<p
-					className={clsx("mt-2", {
-						"text-blue-500": category === "Web Development",
-						"text-red-500": category === "Machine Learning",
-						"text-gray-500": category !== "Web Development" && category !== "Machine Learning",
+					className={clsx("mt-2 text-white py-1 px-3 rounded-full", {
+						"bg-blue-500": category === "Web Development",
+						"bg-red-500": category === "Machine Learning",
+						"bg-green-500": category === "Data Analysis",
+						"bg-gray-500": category !== "Web Development" && category !== "Machine Learning",
 					})}
 				>
 					{category}

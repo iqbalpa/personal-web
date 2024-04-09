@@ -156,4 +156,52 @@ export const projectItems: ProjectItemProps[] = [
 		],
 		paperLink: "xxx",
 	},
+	{
+		title: "Kaggle Competition: Spaceship Titanic",
+		description: "Predict the survival of passengers on the Titanic",
+		techStacks: ["Python", "Scikit-learn", "XGBoost", "Catboost"],
+		category: "Machine Learning",
+		implementation: [
+			"Performed exploratory data analysis to understand the data distribution and correlation between features",
+			"Preprocessed the data by transforming dirty data, encoding, and scaling the data",
+			"Utilized Scikit-learn, XGBoost, and Catboost to develop models and evaluate the its performance",
+		],
+		repoLink: "https://github.com/iqbalpa/kaggle-things/blob/main/spaceship-titanic/spaceship-titanic.ipynb",
+	},
+	{
+		title: "EDA: The Ultimate Film Statistics Dataset - for ML",
+		description: "Exploratory Data Analysis on The Ultimate Film Statistics Dataset",
+		techStacks: ["Python", "Pandas", "Matplotlib", "Seaborn"],
+		category: "Data Analysis",
+		implementation: [
+			"Preprocessed the data by transforming dirty data, splitting column, and reformat the data",
+			"Performed exploratory data analysis to understand the data distribution and correlation between features",
+			"Visualized the data using Matplotlib and Seaborn to gain valuable insights",
+		],
+		repoLink: "https://github.com/iqbalpa/kaggle-things/blob/main/movies-dataset/movie-dataset.ipynb",
+	},
+	{
+		title: "Kaggle: Image Scene Classification",
+		description: "Image scene classification using CNN",
+		techStacks: ["Python", "Pytorch"],
+		category: "Machine Learning",
+		implementation: [
+			"Developed a plain CNN model to classify the image scene",
+			"Replicated the ResNet architecture to extract the image features and use it as the model backbone",
+			"Utilized pre-trained ResNet50 model to improve the model performance",
+		],
+		repoLink: "https://github.com/iqbalpa/kaggle-things/tree/main/intel-image-classification",
+	},
+	{
+		title: "Kaggle: Emotion Detection from Text",
+		description: "Emotion detection from text using Tf-idf and Catboost",
+		techStacks: ["Python", "Catboost"],
+		category: "Machine Learning",
+		implementation: [
+			"Preprocessed the data by transforming dirty data",
+			"Utilized tf-idf and BERT to extract the text features as a vector representation",
+			"Utilized Catboost to develop models and evaluate the its performance",
+		],
+		repoLink: "https://github.com/iqbalpa/kaggle-things/tree/main/emotion-detection-from-text",
+	},
 ];
