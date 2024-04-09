@@ -1,8 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 import { ProjectItemProps } from "@/constant/type";
+import LinkButton from "../linkButton/LinkButton";
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
 	title,
@@ -54,27 +54,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 					{category}
 				</p>
 				<div className="flex flex-row">
-					{appLink && (
-						<Link href={appLink} target="_blank">
-							<button className="text-blue-500 bg-transparent border border-blue-500 rounded-md px-3 py-1 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">
-								App
-							</button>
-						</Link>
-					)}
-					{repoLink && (
-						<Link href={repoLink} target="_blank">
-							<button className="ml-2 text-blue-500 bg-transparent border border-blue-500 rounded-md px-3 py-1 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">
-								Repo
-							</button>
-						</Link>
-					)}
-					{paperLink && (
-						<Link href={paperLink} target="_blank">
-							<button className="ml-2 text-blue-500 bg-transparent border border-blue-500 rounded-md px-3 py-1 hover:bg-blue-500 hover:text-white transition duration-300 ease-in-out">
-								Paper
-							</button>
-						</Link>
-					)}
+					{appLink && <LinkButton link={appLink} text="App" />}
+					{repoLink && <LinkButton link={repoLink} text="Repo" />}
+					{paperLink && <LinkButton link={paperLink} text="Paper" />}
 				</div>
 			</div>
 		</div>

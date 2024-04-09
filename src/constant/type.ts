@@ -28,3 +28,8 @@ export type ProjectItemProps = {
 	appLink?: string;
 	paperLink?: string;
 };
+
+export type LinkButtonProps = {
+	link: string;
+	text: string;
+};
