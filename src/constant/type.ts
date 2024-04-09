@@ -16,3 +16,15 @@ export type OrganizationItemProps = {
 	desc: string[];
 	duration: string;
 };
+
+export type ProjectItemProps = {
+	title: string;
+	description: string;
+	image?: string;
+	techStacks: string[];
+	category: string;
+	implementation: string[];
+	repoLink?: string;
+	appLink?: string;
+	paperLink?: string;
+};

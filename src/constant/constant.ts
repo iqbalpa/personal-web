@@ -1,4 +1,4 @@
-import { AwardItemProps, ExperienceItemProps, OrganizationItemProps } from "@/constant/type";
+import { AwardItemProps, ExperienceItemProps, OrganizationItemProps, ProjectItemProps } from "@/constant/type";
 
 export const AwardItems: AwardItemProps[] = [
 	{
@@ -73,5 +73,54 @@ export const OrganizationItems: OrganizationItemProps[] = [
 		role: "Teaching Assistant of Business Intelligence at SISTECH",
 		desc: ["Guided and mentored 20 mentees along with other TAs"],
 		duration: "Jun. 2023 – Aug. 2023",
+	},
+];
+
+export const projectItems: ProjectItemProps[] = [
+	{
+		title: "Todo App Backend",
+		description: "Todo application to manage your tasks",
+		techStacks: ["Go", "Gin", "Gorm", "PostgreSQL"],
+		category: "Web Development",
+		implementation: [
+			"Created CRUD API using Golang Gin",
+			"Implement Authentication and Authorization",
+			"Managed to connect the backend and PostgreSQL database using Golang Gorm",
+			"Implemented dependency injection",
+		],
+		repoLink: "https://github.com/iqbalpa/todo-backend-go",
+	},
+	{
+		title: "Rentspace",
+		description: "Rentspace is a platform to rent your space",
+		techStacks: ["Spring Boot", "Next.js", "PostgreSQL", "Docker", "GCP", "Sonarcloud"],
+		category: "Web Development",
+		implementation: [
+			"Implemented microservices architecture",
+			"Developed the frontend using NextJS - Tailwind CSS for styling",
+			"Developed the API gateway for microservices backend using Java Springboot",
+		],
+	},
+	{
+		title: "HalowBund",
+		description: "HalowBund is a platform to provides information for mothers and children",
+		techStacks: ["Django", "Javascript", "Flutter"],
+		category: "Web Development",
+		implementation: [
+			"Created the frontend with plain HTML, CSS, Javascript for website application",
+			"Created the frontend with Flutter for mobile application",
+			"Built the backend system using Django and its unit test",
+		],
+		repoLink: "https://github.com/orgs/PBP-F09/repositories",
+	},
+	{
+		title: "Netflix Landing Page Clone",
+		description: "Netflix landing page clone using React",
+		techStacks: ["React", "Tailwind CSS"],
+		category: "Web Development",
+		implementation: [
+			"Developed a frontend clone for Netflix landing page with React JS as the frontend framework and Tailwind CSS for styling",
+		],
+		appLink: "https://netflix-clone-iqbalpa.vercel.app/",
 	},
 ];
