@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 import { ProjectItemProps } from "@/constant/type";
 import LinkButton from "../linkButton/LinkButton";
 
@@ -16,7 +19,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 	paperLink,
 }) => {
 	return (
-		<div className="bg-white p-4 shadow-lg rounded-lg">
+		<motion.div
+			initial={{ opacity: 0, scale: 0.2 }}
+			whileInView={{ opacity: 1, scale: 1}}
+			transition={{ duration: 1 }}
+			className="bg-white p-4 shadow-lg rounded-lg"
+		>
 			{image && <Image src={image} alt={title} width={300} height={200} />}
 			<h2 className="text-lg font-bold">{title}</h2>
 			<p className="text-gray-500">{description}</p>
@@ -51,7 +59,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 					{paperLink && <LinkButton link={paperLink} text="Paper" />}
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
