@@ -16,15 +16,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 	paperLink,
 }) => {
 	return (
-		// <div className="bg-white p-4 shadow-lg rounded-lg">
-		<div
-			className={clsx("p-4 shadow-lg rounded-lg", {
-				"bg-blue-200": category === "Web Development",
-				"bg-red-200": category === "Machine Learning",
-				"bg-green-200": category === "Data Analysis",
-				"bg-gray-300": category !== "Web Development" && category !== "Machine Learning",
-			})}
-		>
+		<div className="bg-white p-4 shadow-lg rounded-lg">
 			{image && <Image src={image} alt={title} width={300} height={200} />}
 			<h2 className="text-lg font-bold">{title}</h2>
 			<p className="text-gray-500">{description}</p>
