@@ -1,11 +1,8 @@
 import { NextPage } from "next";
+import BlogModule from "@/modules/blog/Blog";
 
 const Page: NextPage = () => {
-	return (
-		<div>
-			<h1>Blog</h1>
-		</div>
-	);
+	return <BlogModule />;
 };
 
 export default Page;
