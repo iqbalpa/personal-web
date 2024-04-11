@@ -33,3 +33,10 @@ export type LinkButtonProps = {
 	link: string;
 	text: string;
 };
+
+export type BlogItemCardProps = {
+	id: string;
+	title: string;
+	content: string[];
+	references: string[];
+};
