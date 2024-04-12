@@ -40,3 +40,10 @@ export type BlogItemCardProps = {
 	content: string[];
 	references: string[];
 };
+
+export type BlogPost = {
+	id: string;
+	title: string;
+	content: string[];
+	references: string[];
+};

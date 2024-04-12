@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import hamburgerReducer from "./reducers";
+import { hamburgerReducer, blogReducer } from "./reducers";
 
 export const makeStore = () => {
 	return configureStore({
 		reducer: {
 			hamburger: hamburgerReducer,
+			blog: blogReducer,
 		},
 	});
 };
