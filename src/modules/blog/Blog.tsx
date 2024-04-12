@@ -1,9 +1,9 @@
 import React from "react";
-import prisma from "@/lib/prisma";
+import { getPosts } from "@/lib/post";
 import BlogItemCard from "@/components/blogItemCard/BlogItemCard";
 
 const BlogModule: React.FC = async () => {
-	const blogs = await prisma.post.findMany({});
+	const blogs = await getPosts();
 
 	return (
 		<div className="flex flex-col justify-center items-center px-6 pb-10 lg:px-20 lg:py-10">
