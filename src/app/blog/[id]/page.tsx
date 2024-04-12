@@ -1,15 +1,8 @@
-"use client";
-
 import { NextPage } from "next";
-import { useParams } from "next/navigation";
+import ArticleModule from "@/modules/blog/Article";
 
 const Page: NextPage = () => {
-	const { id } = useParams();
-	return (
-		<div>
-			<p>Post: {id}</p>
-		</div>
-	);
+	return <ArticleModule />;
 };
 
 export default Page;
