@@ -8,7 +8,7 @@ import Hero from "./section/Hero";
 
 const AboutModule: React.FC = () => {
 	return (
-		<div className="max-w-screen flex flex-col px-40 pt-5 pb-20">
+		<div className="max-w-screen flex flex-col px-10 lg:px-40 pt-5 pb-20">
 			<Hero />
 			<div className="m-4" />
 			<Education />
