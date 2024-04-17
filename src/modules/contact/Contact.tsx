@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaMedium, FaKaggle } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { motion } from "framer-motion";
 
 type ContactItem = {
 	id: number;
@@ -47,19 +50,32 @@ const contactItems: ContactItem[] = [
 const ContactModule: React.FC = () => {
 	return (
 		<div className="flex flex-wrap justify-center px-10 md:px-24 lg:px-44 py-5 md:py-10 lg:py-16">
-			<h1 className="w-full text-3xl font-bold text-center mb-5">Contact</h1>
+			<motion.h1
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 0.9 }}
+				className="w-full text-3xl font-bold text-center mb-5"
+			>
+				Contact
+			</motion.h1>
 			{contactItems.map((item) => (
-				<a
+				<motion.div
 					key={item.id}
-					href={item.url}
-					target="_blank"
-					rel="noreferrer"
-					className="w-72 md:w-80 bg-white rounded-lg shadow-lg overflow-hidden m-3 p-4 flex flex-col items-center justify-center hover:shadow-2xl hover:border-black hover:border-[1px] hover:scale-110 transition duration-300"
+					initial={{ opacity: 0, scale: 0.2 }}
+					whileInView={{ opacity: 1, scale: 1 }}
+					transition={{ duration: 0.5 }}
 				>
-					{item.icon}
-					<h2 className="text-lg font-semibold my-2">{item.name}</h2>
-					<p className="text-gray-600 text-sm">{item.title}</p>
-				</a>
+					<a
+						href={item.url}
+						target="_blank"
+						rel="noreferrer"
+						className="w-72 md:w-80 bg-white rounded-lg shadow-lg overflow-hidden m-3 p-4 flex flex-col items-center justify-center hover:shadow-2xl hover:border-black hover:border-[1px] hover:scale-110 transition duration-300"
+					>
+						{item.icon}
+						<h2 className="text-lg font-semibold my-2">{item.name}</h2>
+						<p className="text-gray-600 text-sm">{item.title}</p>
+					</a>
+				</motion.div>
 			))}
 		</div>
 	);
