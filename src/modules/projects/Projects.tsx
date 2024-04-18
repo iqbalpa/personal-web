@@ -1,11 +1,15 @@
 "use client";
 
-import React from "react";
+import React, {useEffect} from "react";
 import { motion } from "framer-motion";
 import ProjectItem from "@/components/projectItem/ProjectItem";
 import { projectItems } from "@/constant/constant";
 
 const ProjectsModule: React.FC = () => {
+	useEffect(() => {
+		document.title = "Projects | Iqbal Pahlevi Amin";
+	}, []);
+
 	return (
 		<div className="flex flex-col justify-center items-center px-6 pb-10 lg:px-20 lg:py-10">
 			<motion.h1

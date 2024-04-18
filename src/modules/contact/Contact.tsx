@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, {useEffect} from "react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaMedium, FaKaggle } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -48,6 +48,10 @@ const contactItems: ContactItem[] = [
 ];
 
 const ContactModule: React.FC = () => {
+	useEffect(() => {
+		document.title = "Contact | Iqbal Pahlevi Amin";
+	}, []);
+
 	return (
 		<div className="flex flex-wrap justify-center px-10 md:px-24 lg:px-44 py-5 md:py-10 lg:py-16">
 			<motion.h1

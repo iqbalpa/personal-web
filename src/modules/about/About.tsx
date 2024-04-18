@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import Education from "./section/Education";
 import Skill from "./section/Skill";
 import Experience from "./section/Experience";
@@ -7,6 +9,10 @@ import Organization from "./section/Organization";
 import Hero from "./section/Hero";
 
 const AboutModule: React.FC = () => {
+	useEffect(() => {
+		document.title = "About | Iqbal Pahlevi Amin";
+	}, []);
+
 	return (
 		<div className="max-w-screen flex flex-col px-10 lg:px-40 pt-5 pb-20">
 			<Hero />
