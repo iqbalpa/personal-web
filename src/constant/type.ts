@@ -42,7 +42,7 @@ export type BlogItemCardProps = {
 };
 
 export type BlogPost = {
-	id: string;
+	id: number;
 	title: string;
 	content: string[];
 	references: string[];
