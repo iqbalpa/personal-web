@@ -1,8 +1,7 @@
 import { getPost } from "@/lib/post";
 
-export default async function Page({ params }) {
-	const id: number = parseInt(params.id);
-	const post = await getPost(id);
+export default async function Page({ params: { id } }: { params: { id: string } }) {
+	const post = await getPost(parseInt(id));
 
 	if (!post) {
 		return <div>Post not found</div>;
