@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Skill: React.FC = () => {
 	return (
 		<motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1 }}>
-			<h1 className="text-2xl font-bold">Skills</h1>
+			<h1 className="text-2xl font-bold mb-1">Skills</h1>
 			<p>
 				<span className="font-bold">Languages:</span> Python, Java, Javascript, Typescript, Go, C++, SQL
 			</p>
