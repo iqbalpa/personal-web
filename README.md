@@ -15,3 +15,9 @@ This is the repository for my personal website. It is a static website build usi
 -   Next.js
 -   Prisma
 -   Vercel
+-   SonarCloud
+
+## SonarCloud
+
+Check the quality of the code using SonarCloud. Click the badge below to see the quality of the code.
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=iqbalpa_personal-website)](https://sonarcloud.io/summary/new_code?id=iqbalpa_personal-website)
