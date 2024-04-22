@@ -9,6 +9,7 @@
     "lint": "next lint",
     "migrate": "dotenv -e .env.dev npx prisma migrate dev",
     "seed": "dotenv -e .env.dev npx tsx prisma/seed.ts",
+    "reset:db": "dotenv -e .env.dev npx tsx prisma/reset.ts",
     "test-db": "dotenv -e .env.dev npx tsx prisma/test.ts"
   },
   "dependencies": {
