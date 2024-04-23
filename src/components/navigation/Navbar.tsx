@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 import Hamburger from "../hamburger/Hamburger";
 import { useAppSelector } from "@/app/lib/hooks";
 
@@ -22,6 +23,7 @@ const navItems: NavItem[] = [
 
 const Navbar: React.FC = () => {
 	const isOpen = useAppSelector((state) => state.hamburger.isOpen);
+	const pathname = usePathname();
 
 	return (
 		<div className="flex flex-row justify-between p-6 bg-white text-black">
@@ -42,7 +44,16 @@ const Navbar: React.FC = () => {
 			>
 				{navItems.map((item) => (
 					<Link href={item.path} key={item.id}>
-						<p className="mr-6 font-semibold hover:scale-110 hover:font-bold duration-200">{item.label}</p>
+						{pathname === item.path ? (
+							<p className="mr-6 font-extrabold hover:scale-110 duration-200 text-blue-500">
+								{item.label}
+							</p>
+						) : (
+							<p className="mr-6 font-semibold hover:scale-110 hover:font-bold duration-200">
+								{item.label}
+							</p>
+						)}
+						{/* <p className="mr-6 font-semibold hover:scale-110 hover:font-bold duration-200">{item.label}</p> */}
 					</Link>
 				))}
 			</motion.div>
