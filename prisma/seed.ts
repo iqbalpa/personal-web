@@ -44,6 +44,7 @@ const postData: Prisma.PostCreateInput[] = [
 			"Secara keseluruhan semester 2 ini sangat seru, dengan segala kekurangannya (UAS full offline padahal kelas full online ckck). Terus aku juga ketemu banyak temen baru, ketemu temen lama yang udah kenal dari pas masih di kampus lama.",
 			"Yaa itu aja buat semester 2 ini, wish me luck buat semester 3 🙂 see you in the next post.",
 		],
+		references: [""],
 	},
 ];
 
