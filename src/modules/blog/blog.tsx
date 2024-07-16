@@ -16,7 +16,7 @@ const BlogModule: React.FC = async () => {
 							<p className="text-sm lg:text-base font-semibold">{post.title}</p>
 							<p className="text-xs lg:text-sm text-slate-500">{post.createdTime}</p>
 						</div>
-						<p>{post.content}</p>
+						<p>{post.description}</p>
 						<Link href={`/blog/${post.slug}`}>
 							<p className="text-blue-500 hover:text-blue-300 duration-100">Read more</p>
 						</Link>

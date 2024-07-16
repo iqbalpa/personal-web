@@ -2,6 +2,10 @@ export interface BlogPost {
 	id: string;
 	title: string;
 	slug: string;
-	content: string;
+	description: string;
 	createdTime: string;
+}
+
+export interface SingleBlogPost extends BlogPost {
+	content: string;
 }
