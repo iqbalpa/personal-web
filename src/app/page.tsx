@@ -1,5 +1,5 @@
-import { NextPage } from 'next';
 import HomeModule from '@/modules/home/Home';
+import { NextPage } from 'next';
 
 const Page: NextPage = () => {
   return <HomeModule />;
