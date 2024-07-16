@@ -10,7 +10,7 @@ const Experience: React.FC = async () => {
   return (
     <div>
       <h1 className="mb-3 text-2xl font-bold">Experiences</h1>
-      {experiences.map((item, index) => (
+      {experiences.map((item, _index) => (
         <ExperienceItem
           key={item.id}
           role={item.role}

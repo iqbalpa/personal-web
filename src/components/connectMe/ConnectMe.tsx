@@ -57,7 +57,7 @@ const ConnectMe: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {connectMeItems.map((item, index) => (
+      {connectMeItems.map((item, _index) => (
         <div
           key={item.id}
           className="flex w-full justify-end rounded-md px-2 py-1 duration-150 hover:scale-105 hover:bg-slate-200 hover:text-black"
