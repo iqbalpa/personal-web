@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-// use the store from hamburger
-import { useAppSelector } from "@/app/lib/hooks";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -26,13 +24,9 @@ const navItems: NavItem[] = [
 ];
 
 const Dropdown: React.FC = () => {
-	const isOpen = useAppSelector((state) => state.hamburger.isOpen);
-	if (!isOpen) return null;
-
 	return (
 		<motion.div
 			className="bg-white text-black flex flex-col justify-center"
-			animate={isOpen ? "open" : "closed"}
 			variants={variants}
 			transition={{ duration: 1 }}
 		>
