@@ -12,7 +12,7 @@ const AwardItem: React.FC<AwardItemProps> = ({ title, desc }) => {
 			whileInView={{ opacity: 1, scale: 1 }}
 			transition={{ duration: 1 }}
 		>
-			<h2 className="text-lg font-semibold">{title}</h2>
+			<h2 className="text-lg font-semibold">[National Level] {title}</h2>
 			<p className="">{desc}</p>
 		</motion.div>
 	);
