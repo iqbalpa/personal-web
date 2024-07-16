@@ -13,8 +13,10 @@
     "test-db": "dotenv -e .env.dev npx tsx prisma/test.ts"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "@prisma/client": "^5.11.0",
     "@reduxjs/toolkit": "^2.2.1",
+    "axios": "^1.7.2",
     "clsx": "^2.1.0",
     "daisyui": "^4.7.3",
     "framer-motion": "^11.0.14",
