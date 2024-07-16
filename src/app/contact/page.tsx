@@ -1,8 +1,8 @@
-import { NextPage } from "next";
-import ContactModule from "@/modules/contact/Contact";
+import { NextPage } from 'next';
+import ContactModule from '@/modules/contact/Contact';
 
 const Page: NextPage = () => {
-	return <ContactModule />;
+  return <ContactModule />;
 };
 
 export default Page;

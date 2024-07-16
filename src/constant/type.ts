@@ -1,42 +1,42 @@
 export type AwardItemProps = {
-	title: string;
-	desc: string;
+  title: string;
+  desc: string;
 };
 
 export type ExperienceItemProps = {
-	role: string;
-	company: string;
-	duration: string;
-	description: string[];
+  role: string;
+  company: string;
+  duration: string;
+  description: string[];
 };
 
 export type OrganizationItemProps = {
-	name: string;
-	role: string;
-	desc: string[];
-	duration: string;
+  name: string;
+  role: string;
+  desc: string[];
+  duration: string;
 };
 
 export type ProjectItemProps = {
-	title: string;
-	description: string;
-	image?: string;
-	techStacks: string[];
-	category: string;
-	implementation: string[];
-	repoLink?: string;
-	appLink?: string;
-	paperLink?: string;
+  title: string;
+  description: string;
+  image?: string;
+  techStacks: string[];
+  category: string;
+  implementation: string[];
+  repoLink?: string;
+  appLink?: string;
+  paperLink?: string;
 };
 
 export type LinkButtonProps = {
-	link: string;
-	text: string;
+  link: string;
+  text: string;
 };
 
 export type BlogItemCardProps = {
-	id: string;
-	title: string;
-	content: string[];
-	references: string[];
+  id: string;
+  title: string;
+  content: string[];
+  references: string[];
 };
