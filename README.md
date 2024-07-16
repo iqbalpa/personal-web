@@ -12,10 +12,10 @@ This is the repository for my personal website. It is a static website build usi
 
 ## Technologies Used
 
--   Next.js
--   Prisma
--   Vercel
--   SonarCloud
+- Next.js
+- Prisma
+- Vercel
+- SonarCloud
 
 ## SonarCloud
 
