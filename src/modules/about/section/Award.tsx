@@ -1,26 +1,27 @@
-"use client";
+import React from 'react';
+import AwardItem from '@/components/awardItem/AwardItem';
+import { fetchAwards } from '@/lib/award.notion';
 
-import React from "react";
-import { motion } from "framer-motion";
-import AwardItem from "@/components/awardItem/AwardItem";
-import { AwardItems } from "../../../constant/constant";
+const Award: React.FC = async () => {
+  const awards = await fetchData();
 
-const Award: React.FC = () => {
-	return (
-		<div>
-			<motion.h1
-				className="text-2xl font-bold mb-3"
-				initial={{ opacity: 0 }}
-				whileInView={{ opacity: 1 }}
-				transition={{ duration: 1 }}
-			>
-				Honor and Awards
-			</motion.h1>
-			{AwardItems.map((item, index) => (
-				<AwardItem key={index} {...item} />
-			))}
-		</div>
-	);
+  return (
+    <div>
+      <h1 className="mb-3 text-2xl font-bold">Honor and Awards</h1>
+      {awards.map((award, index) => (
+        <AwardItem
+          key={award.id}
+          title={award.title}
+          desc={award.description}
+        />
+      ))}
+    </div>
+  );
 };
+
+async function fetchData() {
+  const res = await fetchAwards();
+  return res;
+}
 
 export default Award;
