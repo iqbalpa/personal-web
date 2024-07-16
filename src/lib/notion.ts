@@ -58,7 +58,7 @@ export const fetchSinglePost = async (
   const responseBlockPages = await notion.blocks.children.list({
     block_id: singlePost.id,
   });
-  const content = responseBlockPages.results;
+  const content: any = responseBlockPages.results;
   const renderer = new NotionRenderer({
     client: notion,
   });
