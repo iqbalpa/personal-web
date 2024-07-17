@@ -1,5 +1,5 @@
 import React from 'react';
-import AwardItem from '@/components/awardItem/AwardItem';
+import AwardItem from '@/components/awardItem/awardItem';
 import { fetchAwards } from '@/lib/award.notion';
 
 const Award: React.FC = async () => {
@@ -8,7 +8,7 @@ const Award: React.FC = async () => {
   return (
     <div>
       <h1 className="mb-3 text-2xl font-bold">Honor and Awards</h1>
-      {awards.map((award, index) => (
+      {awards.map((award, _index) => (
         <AwardItem
           key={award.id}
           title={award.title}

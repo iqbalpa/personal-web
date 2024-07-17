@@ -1,9 +1,9 @@
 'use client';
 
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import React from 'react';
 import MyPhoto from '../../../public/assets/iqbal.jpg';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const CV_LINK =
   'https://drive.google.com/file/d/1_BbwJzqKAoxklMVw0_iSjixR_Rfq7NFd/view?usp=sharing';

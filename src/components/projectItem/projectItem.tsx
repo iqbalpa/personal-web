@@ -5,7 +5,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import { ProjectItemProps } from '@/constant/type';
-import LinkButton from '../linkButton/LinkButton';
+import LinkButton from '../linkButton/linkButton';
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
   title,

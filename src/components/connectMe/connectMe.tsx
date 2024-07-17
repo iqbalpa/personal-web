@@ -1,12 +1,10 @@
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
+import React from 'react';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaMedium } from 'react-icons/fa6';
-import { FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 type ConnectMeItem = {
@@ -57,7 +55,7 @@ const ConnectMe: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {connectMeItems.map((item, index) => (
+      {connectMeItems.map((item, _index) => (
         <div
           key={item.id}
           className="flex w-full justify-end rounded-md px-2 py-1 duration-150 hover:scale-105 hover:bg-slate-200 hover:text-black"

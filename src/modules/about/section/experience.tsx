@@ -1,8 +1,7 @@
-import React from 'react';
-import ExperienceItem from '@/components/experienceItem/ExperienceItem';
-import { experienceItems } from '../../../constant/constant';
+import ExperienceItem from '@/components/experienceItem/experienceItem';
 import { fetchExperiences } from '@/lib/experience.notion';
 import { convDuration } from '@/utils/convertDuration';
+import React from 'react';
 
 const Experience: React.FC = async () => {
   const experiences = await fetchData();
@@ -10,7 +9,7 @@ const Experience: React.FC = async () => {
   return (
     <div>
       <h1 className="mb-3 text-2xl font-bold">Experiences</h1>
-      {experiences.map((item, index) => (
+      {experiences.map((item, _index) => (
         <ExperienceItem
           key={item.id}
           role={item.role}

@@ -1,5 +1,5 @@
 {
-  "name": "testaja",
+  "name": "personal-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,7 +19,7 @@
     "axios": "^1.7.2",
     "clsx": "^2.1.0",
     "daisyui": "^4.7.3",
-    "framer-motion": "^11.0.14",
+    "framer-motion": "^11.2.10",
     "hamburger-react": "^2.5.1",
     "lucide": "^0.408.0",
     "lucide-react": "^0.408.0",

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { fetchSinglePost } from '@/lib/notion';
+import { fetchSinglePost } from '@/lib/blog.notion';
 import { FaChevronLeft } from 'react-icons/fa';
 
 export default async function Page({ params }: { params: { slug: string } }) {
