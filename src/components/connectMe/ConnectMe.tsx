@@ -1,12 +1,10 @@
 'use client';
 
-import React from 'react';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
+import React from 'react';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaMedium } from 'react-icons/fa6';
-import { FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 type ConnectMeItem = {
