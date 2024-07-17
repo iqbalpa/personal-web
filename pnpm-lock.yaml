@@ -29,7 +29,7 @@ importers:
         specifier: ^4.7.3
         version: 4.11.1(postcss@8.4.38)
       framer-motion:
-        specifier: ^11.0.14
+        specifier: ^11.2.10
         version: 11.2.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       hamburger-react:
         specifier: ^2.5.1
