@@ -1,4 +1,4 @@
-import AboutModule from '@/modules/about/About';
+import AboutModule from '@/modules/about/about';
 import { NextPage } from 'next';
 
 const About: NextPage = () => {

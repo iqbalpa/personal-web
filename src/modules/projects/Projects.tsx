@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import ProjectItem from '@/components/projectItem/ProjectItem';
+import ProjectItem from '@/components/projectItem/projectItem';
 import { projectItems } from '@/constant/constant';
 
 const ProjectsModule: React.FC = () => {

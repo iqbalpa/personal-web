@@ -1,5 +1,5 @@
 import React from 'react';
-import ExperienceItem from '@/components/experienceItem/ExperienceItem';
+import ExperienceItem from '@/components/experienceItem/experienceItem';
 import { experienceItems } from '../../../constant/constant';
 import { fetchExperiences } from '@/lib/experience.notion';
 import { convDuration } from '@/utils/convertDuration';

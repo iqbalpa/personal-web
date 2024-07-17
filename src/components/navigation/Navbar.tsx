@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Hamburger from 'hamburger-react';
-import Dropdown from '../dropdown/Dropdown';
+import Dropdown from '../dropdown/dropdown';
 
 type NavItem = {
   id: number;

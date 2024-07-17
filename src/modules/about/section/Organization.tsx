@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import OrganizationItem from '@/components/organizationItem/OrganizationItem';
+import OrganizationItem from '@/components/organizationItem/organizationItem';
 import { OrganizationItems } from '../../../constant/constant';
 
 const Organization: React.FC = () => {

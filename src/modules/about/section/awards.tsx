@@ -1,5 +1,5 @@
 import React from 'react';
-import AwardItem from '@/components/awardItem/AwardItem';
+import AwardItem from '@/components/awardItem/awardItem';
 import { fetchAwards } from '@/lib/award.notion';
 
 const Award: React.FC = async () => {
