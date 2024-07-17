@@ -1,8 +1,7 @@
-import React from 'react';
 import ExperienceItem from '@/components/experienceItem/experienceItem';
-import { experienceItems } from '../../../constant/constant';
 import { fetchExperiences } from '@/lib/experience.notion';
 import { convDuration } from '@/utils/convertDuration';
+import React from 'react';
 
 const Experience: React.FC = async () => {
   const experiences = await fetchData();
