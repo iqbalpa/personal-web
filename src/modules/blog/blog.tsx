@@ -1,7 +1,7 @@
-import React from 'react';
-import { fetchBlogPosts } from '@/lib/notion';
 import { BlogPost } from '@/constant/blog.constant';
+import { fetchBlogPosts } from '@/lib/blog.notion';
 import Link from 'next/link';
+import React from 'react';
 
 const BlogModule: React.FC = async () => {
   const posts: BlogPost[] = await fetchPosts();
