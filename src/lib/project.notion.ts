@@ -23,6 +23,7 @@ const getProjectContent = React.cache(async (post: any): Promise<IProject> => {
     link: post.properties.link.rich_text[0].plain_text,
     type: post.properties.type.select.name,
     desc: post.properties.desc.rich_text[0].plain_text,
+    image: post.properties.image.rich_text[0].plain_text,
     date: post.properties.date.date.start,
     stack: post.properties.stack.multi_select.map((tech: any) => tech.name),
     detail: detail,

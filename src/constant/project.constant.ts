@@ -7,4 +7,5 @@ export interface IProject {
   stack: string[];
   link: string;
   date: string;
+  image?: string;
 }

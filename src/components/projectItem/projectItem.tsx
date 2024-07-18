@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import { motion } from 'framer-motion';
 import React from 'react';
 import LinkButton from '../linkButton/linkButton';
+import Image from 'next/image';
 
 const ProjectItem: React.FC<IProject> = ({
   title,
@@ -13,15 +14,26 @@ const ProjectItem: React.FC<IProject> = ({
   type,
   detail,
   link,
+  image,
 }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.2 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      className="rounded-lg bg-white p-4 shadow-lg"
+      className="flex flex-col rounded-lg bg-white p-4 shadow-lg"
     >
-      {/* {image && <Image src={image} alt={title} width={300} height={200} />} */}
+      {image && (
+        <div className="mb-2 w-full">
+          <Image
+            className="rounded-t-lg"
+            src={image}
+            alt={title}
+            width={500}
+            height={300}
+          />
+        </div>
+      )}
       <h2 className="text-lg font-bold">{title}</h2>
       <p className="text-gray-500">{desc}</p>
       <ul className="list-disc">
