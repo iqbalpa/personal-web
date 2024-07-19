@@ -17,7 +17,7 @@ const navItems: NavItem[] = [
   { id: 1, path: '/', label: 'Home' },
   { id: 2, path: '/about', label: 'About' },
   { id: 3, path: '/projects', label: 'Projects' },
-  { id: 4, path: '/blog', label: 'Blog' },
+  { id: 4, path: 'https://iqbalpa.medium.com/', label: 'Blog' },
   { id: 5, path: '/contact', label: 'Contact' },
 ];
 
@@ -46,7 +46,11 @@ const Navbar: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           {navItems.map((item) => (
-            <Link href={item.path} key={item.id}>
+            <Link
+              href={item.path}
+              key={item.id}
+              target={item.label === 'Blog' ? '_blank' : '_self'}
+            >
               {pathname === item.path ? (
                 <p className="mr-6 font-extrabold text-blue-500 duration-200 hover:scale-110">
                   {item.label}
@@ -56,7 +60,6 @@ const Navbar: React.FC = () => {
                   {item.label}
                 </p>
               )}
-              {/* <p className="mr-6 font-semibold hover:scale-110 hover:font-bold duration-200">{item.label}</p> */}
             </Link>
           ))}
         </motion.div>

@@ -15,14 +15,15 @@ const getProjectContent = React.cache(async (post: any): Promise<IProject> => {
 
   // Extracting text content from all child blocks
   const detail: string[] = content.map(
-    (block: any) => block.bulleted_list_item.rich_text[0].plain_text,
+    (block: any) => block.bulleted_list_item?.rich_text[0].plain_text,
   );
   return {
     id: post.id,
     title: post.properties.title.title[0].plain_text,
-    link: post.properties.link.rich_text[0].plain_text,
+    link: post.properties.link.rich_text[0]?.plain_text || '',
     type: post.properties.type.select.name,
     desc: post.properties.desc.rich_text[0].plain_text,
+    image: post.properties.image.rich_text[0]?.plain_text || '',
     date: post.properties.date.date.start,
     stack: post.properties.stack.multi_select.map((tech: any) => tech.name),
     detail: detail,
