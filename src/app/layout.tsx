@@ -3,6 +3,7 @@ import Navbar from '@/components/navigation/navbar';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import GoTopButton from '@/components/goTopButton/gotopButton';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <ConnectMe />
         <Navbar />
         {children}
+        <GoTopButton />
         {/* <Footer /> */}
       </body>
     </html>
