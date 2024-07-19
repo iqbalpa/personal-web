@@ -6,7 +6,7 @@ import React from 'react';
 import MyPhoto from '../../../public/assets/iqbal.jpg';
 
 const CV_LINK =
-  'https://drive.google.com/file/d/1_BbwJzqKAoxklMVw0_iSjixR_Rfq7NFd/view?usp=sharing';
+  'https://drive.google.com/file/d/1hhJR_bkL2bh56ff_4risD5pKWOqiePmH/view?usp=sharing';
 
 const HomeModule: React.FC = () => {
   return (
