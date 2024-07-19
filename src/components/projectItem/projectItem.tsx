@@ -56,11 +56,9 @@ const ProjectItem: React.FC<IProject> = ({
       <div className="flex justify-between">
         <p
           className={clsx('mt-2 rounded-full px-3 py-1 text-white', {
-            'bg-blue-500': type === 'Web Development',
-            'bg-red-500': type === 'Machine Learning',
-            'bg-green-500': type === 'Data Analysis',
-            'bg-gray-500':
-              type !== 'Web Development' && type !== 'Machine Learning',
+            'bg-blue-500': type === 'se',
+            'bg-red-500': type === 'ml',
+            'bg-gray-500': type !== 'se' && type !== 'Machine Learning',
           })}
         >
           {type}
