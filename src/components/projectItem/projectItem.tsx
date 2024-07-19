@@ -11,7 +11,6 @@ const ProjectItem: React.FC<IProject> = ({
   title,
   desc,
   stack,
-  type,
   detail,
   link,
   image,
@@ -21,7 +20,7 @@ const ProjectItem: React.FC<IProject> = ({
       initial={{ opacity: 0, scale: 0.2 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col rounded-lg bg-white p-4 shadow-lg"
+      className="flex flex-col rounded-lg border-[1px] border-slate-300 bg-white p-4 shadow-lg"
     >
       {image && (
         <div className="mb-2 w-full">
@@ -34,11 +33,11 @@ const ProjectItem: React.FC<IProject> = ({
           />
         </div>
       )}
-      <h2 className="text-lg font-bold">{title}</h2>
-      <p className="text-gray-500">{desc}</p>
+      <h2 className="text-sm font-bold md:text-base lg:text-lg">{title}</h2>
+      <p className="text-xs text-gray-500 md:text-sm lg:text-base">{desc}</p>
       <ul className="list-disc">
         {detail.map((item, index) => (
-          <li className="ml-5" key={index}>
+          <li className="ml-5 text-xs md:text-sm lg:text-base" key={index}>
             {item}
           </li>
         ))}
@@ -47,24 +46,15 @@ const ProjectItem: React.FC<IProject> = ({
         {stack.map((tech, index) => (
           <span
             key={index}
-            className="mb-2 mr-2 rounded-full bg-gray-200 px-2 py-1 text-sm"
+            className="mb-2 mr-2 rounded-full bg-gray-200 px-2 py-1 text-xs md:text-sm"
           >
             {tech}
           </span>
         ))}
       </div>
-      <div className="flex justify-between">
-        <p
-          className={clsx('mt-2 rounded-full px-3 py-1 text-white', {
-            'bg-blue-500': type === 'se',
-            'bg-red-500': type === 'ml',
-            'bg-gray-500': type !== 'se' && type !== 'Machine Learning',
-          })}
-        >
-          {type}
-        </p>
-        <div className="flex flex-row">
-          <LinkButton link={link} text="Repo" />
+      <div className="flex justify-end">
+        <div className="flex flex-row text-xs md:text-sm">
+          <LinkButton link={link} text="Link" />
         </div>
       </div>
     </motion.div>
