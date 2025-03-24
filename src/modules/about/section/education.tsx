@@ -13,7 +13,7 @@ const Education: React.FC = () => {
       transition={{ duration: 1 }}
     >
       <h1 className="mb-1 text-2xl font-bold">Education</h1>
-      <div className="flex flex-row items-center">
+      <div className="mb-4 flex flex-row items-center rounded-2xl bg-gray-100 p-5 shadow-lg shadow-gray-300">
         <Image
           src={LogoUI}
           alt="UI Logo"
@@ -28,7 +28,7 @@ const Education: React.FC = () => {
             <span className="font-bold">Major:</span> Computer Science
           </p>
           <p>
-            <span className="font-bold">Year:</span> 2021 - present
+            <span className="font-bold">Year:</span> 2021 - 2025
           </p>
         </div>
       </div>

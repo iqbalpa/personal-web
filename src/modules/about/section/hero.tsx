@@ -21,8 +21,7 @@ const Hero: React.FC = () => {
         height={200}
       />
       <p className="w-full text-center lg:w-3/5">
-        a computer science student who loves to learn machine learning and
-        building something as a software engineer
+        a computer science student who loves to learn things
       </p>
     </motion.div>
   );
