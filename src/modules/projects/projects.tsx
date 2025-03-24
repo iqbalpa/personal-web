@@ -27,7 +27,7 @@ const ProjectsModule: React.FC = async () => {
         >
           <div className="columns-1 gap-3 md:columns-2 lg:columns-3 2xl:columns-4">
             {projects.map((item, _index) => (
-              <div className="mb-3 break-inside-avoid">
+              <div key={item.id} className="mb-3 break-inside-avoid">
                 <ProjectItem key={item.id} {...item} />
               </div>
             ))}
@@ -49,7 +49,7 @@ const ProjectsModule: React.FC = async () => {
             {projects
               .filter((item) => item.type === 'se')
               .map((item, _index) => (
-                <div className="mb-3 break-inside-avoid">
+                <div key={item.id} className="mb-3 break-inside-avoid">
                   <ProjectItem key={item.id} {...item} />
                 </div>
               ))}
@@ -71,7 +71,7 @@ const ProjectsModule: React.FC = async () => {
             {projects
               .filter((item) => item.type === 'ml')
               .map((item, _index) => (
-                <div className="mb-3 break-inside-avoid">
+                <div key={item.id} className="mb-3 break-inside-avoid">
                   <ProjectItem key={item.id} {...item} />
                 </div>
               ))}
