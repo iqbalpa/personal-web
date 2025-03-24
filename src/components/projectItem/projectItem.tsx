@@ -21,15 +21,16 @@ const ProjectItem: React.FC<IProject> = ({
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
       className="flex flex-col rounded-lg border-[1px] border-slate-300 bg-white p-4 shadow-lg"
+      style={{ height: 'fit-content' }}
     >
       {image && (
-        <div className="mb-2 w-full">
+        <div className="relative mb-2 h-0 w-full pb-[56.25%]">
           <Image
-            className="rounded-t-lg"
+            className="rounded-t-lg object-cover"
             src={image}
             alt={title}
-            width={500}
-            height={300}
+            layout="fill"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       )}

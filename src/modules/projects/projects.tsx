@@ -1,3 +1,4 @@
+import AwardItem from '@/components/awardItem/awardItem';
 import ProjectItem from '@/components/projectItem/projectItem';
 import { fetchProjects } from '@/lib/project.notion';
 import React from 'react';
@@ -24,9 +25,11 @@ const ProjectsModule: React.FC = async () => {
           role="tabpanel"
           className="tab-content rounded-box border-base-300 bg-base-100 p-6"
         >
-          <div className="flex flex-col gap-3 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+          <div className="columns-1 gap-3 md:columns-2 lg:columns-3 2xl:columns-4">
             {projects.map((item, _index) => (
-              <ProjectItem key={item.id} {...item} />
+              <div className="mb-3 break-inside-avoid">
+                <ProjectItem key={item.id} {...item} />
+              </div>
             ))}
           </div>
         </div>
@@ -42,11 +45,13 @@ const ProjectsModule: React.FC = async () => {
           role="tabpanel"
           className="tab-content rounded-box border-base-300 bg-base-100 p-6"
         >
-          <div className="flex flex-col gap-3 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+          <div className="columns-1 gap-3 md:columns-2 lg:columns-3 2xl:columns-4">
             {projects
               .filter((item) => item.type === 'se')
               .map((item, _index) => (
-                <ProjectItem key={item.id} {...item} />
+                <div className="mb-3 break-inside-avoid">
+                  <ProjectItem key={item.id} {...item} />
+                </div>
               ))}
           </div>
         </div>
@@ -62,11 +67,13 @@ const ProjectsModule: React.FC = async () => {
           role="tabpanel"
           className="tab-content rounded-box border-base-300 bg-base-100 p-6"
         >
-          <div className="flex flex-col gap-3 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+          <div className="columns-1 gap-3 md:columns-2 lg:columns-3 2xl:columns-4">
             {projects
               .filter((item) => item.type === 'ml')
               .map((item, _index) => (
-                <ProjectItem key={item.id} {...item} />
+                <div className="mb-3 break-inside-avoid">
+                  <ProjectItem key={item.id} {...item} />
+                </div>
               ))}
           </div>
         </div>
