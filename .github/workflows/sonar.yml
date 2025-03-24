@@ -22,7 +22,7 @@ jobs:
           node-version: '20'
       
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
       
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
