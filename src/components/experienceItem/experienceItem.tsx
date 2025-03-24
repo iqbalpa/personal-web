@@ -15,7 +15,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      className="mb-2"
+      className="mb-4 rounded-2xl bg-gray-100 p-5 shadow-lg shadow-gray-300"
     >
       <h1 className="text-lg font-bold">{role}</h1>
       <h2 className="text-md font-bold">{company}</h2>

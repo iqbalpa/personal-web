@@ -7,7 +7,7 @@ import { AwardItemProps } from '@/constant/type';
 const AwardItem: React.FC<AwardItemProps> = ({ title, desc }) => {
   return (
     <motion.div
-      className="mb-2"
+      className="mb-2 rounded-2xl bg-gray-100 p-3 shadow-lg shadow-gray-300"
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
