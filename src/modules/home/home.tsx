@@ -6,7 +6,7 @@ import React from 'react';
 import MyPhoto from '../../../public/assets/iqbal.jpg';
 
 const CV_LINK =
-  'https://drive.google.com/file/d/1llFA3vXoWWHZi82zES_9hTQ_byVKQkhL/view?usp=sharing';
+  'https://drive.google.com/file/d/1qmxVeBWQBxcz8KRaRk1ZF9Q3zSW8ZDxP/view?usp=sharing';
 
 const HomeModule: React.FC = () => {
   return (
@@ -32,22 +32,19 @@ const HomeModule: React.FC = () => {
           </span>
         </h1>
         <p className="mb-2 text-base md:text-lg">
-          Hi! I am Iqbal Pahlevi Amin, a 3rd year Computer Science student at
-          Universitas Indonesia. I am serving as Teaching Assistant of
-          Introduction to AI & Data Science (5th and 6th semester), Programming
-          Foundation with Python (4th semester), and Calculus 1 (3rd semester).
+          A final-year Computer Science student at Universitas Indonesia, who
+          loves <span className="font-semibold">Machine Learning</span> and{' '}
+          <span className="font-semibold">Software Engineering</span>. I enjoy
+          exploring natural language processing, computer vision, full stack
+          development, and cloud computing.
         </p>
         <p className="mb-2 text-base md:text-lg">
-          I have experience in doing research in the fields of simultaneous
-          speech translation during my time in Japan Advanced Institute of
-          Science and Technology (JAIST) as a research intern.
-        </p>
-        <p className="text-base md:text-lg">
-          Software Engineer and Machine Learning are two fields that I am
-          interested about. I love to learn about machine learning algorithm,
-          especially deep learning in computer vision and natural language
-          processing. While learning about machine learning, I also enjoy to
-          develop website, both frontend and backend as well.
+          Previously, I was working as a{' '}
+          <span className="font-semibold">
+            Software Engineer Intern at Traveloka
+          </span>
+          . I also was working as{' '}
+          <span className="font-semibold"> Research Intern at JAIST</span>.
         </p>
       </motion.div>
       <motion.div
